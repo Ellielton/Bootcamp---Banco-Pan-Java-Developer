@@ -109,5 +109,21 @@ com o comando git clone enseir o caminho do projeto. A primeira vez que usar ess
  git commit -m '' Passar uma breve descrição sobre o arquivo.
  Realizado o primeiro commit.
  
+ # Aula 8
+
+Acontecimento por baixo dos passo na realização do commit, ver video parar endenter.
+
+Repositório local: A pasta criada, apartir do git init é um repositório git.
+
+repositório remoto: É a pasta cria no github para organizar os arquivos- repositório github.
+
+*Os arquivo do repositório local só ficaram prontos para versionamento apos o commit.
+
+Git bash aberto desntro da pasta criada na aula anterior contendo um arquivo.md,
+ -git status: mostra se tem commit pr fazer, o que indica se teve ou não alterações no aquivo.
+- mv nome do arquivo/: Para remover o arquivo indicado.
+- git echo> nome do arquivo.extesão: Cria um aqrquivo.
+- git add . : Adiconar um o aqrquivo criado para ser monitorado pelo git.
+- git commit -m '' : Criar uma breve descrição para caracterizar o aquivo.
  
  
