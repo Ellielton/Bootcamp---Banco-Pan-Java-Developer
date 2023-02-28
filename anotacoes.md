@@ -126,4 +126,8 @@ Git bash aberto desntro da pasta criada na aula anterior contendo um arquivo.md,
 - git add . : Adiconar um o aqrquivo criado para ser monitorado pelo git.
 - git commit -m '' : Criar uma breve descrição para caracterizar o aquivo.
  
- 
+ # Aula 9
+ ## Versionamento com repositório remoto
+
+Com  remoto criado copia o caminho da chve shh e no repositóio local com git bash se não tiver nada para commitar que conferi com git status,
+faz-se o comando git push origin main, pronto os dados foram empurados para o github.
