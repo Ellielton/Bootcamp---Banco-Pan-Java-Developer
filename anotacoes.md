@@ -83,3 +83,31 @@ ssh-add id_ed25519. Se pedir uma senha aqui ela foi cadastrada no passo 1 (Opcio
 Para fazer um clone de um projeto é só ir no github--> projeto alvo--> no botão <>codigo--> trocar https// pot ssh e copiar o caminho. Lá no terminal
 com o comando git clone enseir o caminho do projeto. A primeira vez que usar essa chave o terminal vairetornar uma mensagem de objeção, mas é só responder com yes. Pronto Clonado!
 
+ # Aula 7
+ ## Comando com git; 
+ - Inciar o git;
+ - Iniciar o versionamento;
+ - Criar um commit;
+ ## Usando:
+ - git init;
+ - git add;
+ - git commit;
+ 
+ # criando um reporitório
+ 
+ Abrir o git bash digitar ls para listar todas as pastas digitar:
+ cd nome da pasta/ --> digitar mkdir nome do arquivo a ser criado dentro da pasta.
+ git init para fazer dessa pasta um repositório do git.
+ Fazendo as configurações inicia no repositorio:
+ - git config --user.name '' Digitar seu nome.
+ - git config --uaser.emai '' Digitar seu endereço de e-mail
+ ls -a lista arquivos ocultos dentro da pasta.
+ cd .. sai da pasta atual.
+ Está proto o repositório. detro dele criar um arquivo com extesão markdown (.md) 
+ git add (. ou nome do arquivo)
+ git statu: O terminal vai informar que existe aquivos para serem commitado.
+ git commit -m '' Passar uma breve descrição sobre o arquivo.
+ Realizado o primeiro commit.
+ 
+ 
+ 
