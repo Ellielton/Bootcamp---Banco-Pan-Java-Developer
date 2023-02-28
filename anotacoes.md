@@ -38,3 +38,23 @@ Alguns comandos do git:
 - Segurança;
 
 SHA1: É uma algoritmo de encriptação,(Secury hash algarithm)Desnvolvido pela NASA, ele gera um conjunto de caracteres de 40 digitos, uma chave de segurança. Uma forma curta de reprentar um arquivo, uma chave segura.
+
+# Aula 5
+
+## Objetos interno do git que são responsáveis pelo versionamento dos códigos:
+
+- Blobs;
+- tree;
+- commit
+
+O blob:
+É um objeto que guarda arquivos com metodos detro dele. O tipo, tamnaho e o conteúdo.
+
+Tree:
+É a árvore responsável por manter toda a estrutura onde ficam os arquivos. Ela traz os blobs, SHA1 e os arquivos.
+A árvore também tem seu próprio SHA1 que guarda o seu estado. Se modificar os SHA1 dos blobs dentro dessa árvore ela vai mudar modifiar seu próprio SHA1 também.
+
+Commit:
+O commit é um objeto que vai juntar tudo e dar sentido para a versão que você está fazendo. O commit aponta para a tree--> parente--> (commit anterior)--> autor--> Mensagem--> Timestamp.
+O commit tem um caminho de tempo e também possui um SHA1. Se mudar qualquer coisa no arquivo, essa alteração vai mudar o SHA1 do arquivo,o SSHA1 do blob e o SHA1 da árvore.
+O sistema é seguro e distribuido por quê os commit são praticamente impossíveis de ser hackeado, e todos que estam desenvolvendo o mesmo projeto tem uma copia fiel e segura do projeto inicial. 
