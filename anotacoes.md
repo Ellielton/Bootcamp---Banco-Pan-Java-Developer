@@ -1,4 +1,4 @@
-##curso de git e github##
+# Curso de Git e Github
 
 Criado em 2005 pelo descontetamento das ferramentas existentes por Linus torvalds o git é um sistema de versionamento distribuido.
 Os principais benefícios de usar o git e github são:
