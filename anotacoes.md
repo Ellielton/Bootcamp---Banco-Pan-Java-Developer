@@ -25,3 +25,16 @@ Alguns comandos do git:
 - del --deletar arquivo;
 - rmdir + nome da pasta + /s /q --Delatar pasta e dotos os arquivos dentro.
 
+# Aula 3
+ Instalando o git para windows.
+
+# Aula 4
+# Tópicos fundamentais para entender o funfionamentos do Git
+## Como o git funciona por baixo dos panos.
+
+- SHA1;
+- Objetos fundamentais;
+- Sistema de distribuição;
+- Segurança;
+
+SHA1: É uma algoritmo de encriptação,(Secury hash algarithm)Desnvolvido pela NASA, ele gera um conjunto de caracteres de 40 digitos, uma chave de segurança. Uma forma curta de reprentar um arquivo, uma chave segura.
