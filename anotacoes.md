@@ -58,3 +58,28 @@ Commit:
 O commit é um objeto que vai juntar tudo e dar sentido para a versão que você está fazendo. O commit aponta para a tree--> parente--> (commit anterior)--> autor--> Mensagem--> Timestamp.
 O commit tem um caminho de tempo e também possui um SHA1. Se mudar qualquer coisa no arquivo, essa alteração vai mudar o SHA1 do arquivo,o SSHA1 do blob e o SHA1 da árvore.
 O sistema é seguro e distribuido por quê os commit são praticamente impossíveis de ser hackeado, e todos que estam desenvolvendo o mesmo projeto tem uma copia fiel e segura do projeto inicial. 
+
+# Aula 6
+## Chave SSH e Token:
+
+Passo - 1 no git bash criar a chve ssh:
+
+A chave SSH é uma forma de estabelecer conexão segura e confiável entre duas maquinas, sendo duas chaves uma pública e outra privada.
+Criando a chave no git bash:
+ssh-keygen -t ed25519 -C 'digitar seu email cadastrado no github sem as aspas'.
+vai pedir para cadastrar um senha e após será craida uma pasta onde irá ficar guardada essa ssh no pc.
+
+Passo - 2:
+Entrar na pasta que foi criada que contem a ssh com o terminal git bash. Digitar o seguinte comando:
+cat id_ed25519.pub 'enter' Esse comando vai mostrar a chave ssh que deve ser copiada.
+acessar sua conta do github--> configurações--> SSH and GPG Keys descrever e colar chave.
+
+Passo - 3:
+Dentro da pasta anterior inicia o ssh agent com o comando: eval $(ssh-agent-s) isso vai retornar um nº que dar inicio ao processo.
+Agora passsamos a chave privada para o agent:
+ssh-add id_ed25519. Se pedir uma senha aqui ela foi cadastrada no passo 1 (Opcional).
+
+*Foi criada a chave ssh e ativada. Ateção quando estiver ativado esse processo no seu pc não é possivél copiar o endereço do repotório e dar o git clone, tem que usar essa chave ssh.
+Para fazer um clone de um projeto é só ir no github--> projeto alvo--> no botão <>codigo--> trocar https// pot ssh e copiar o caminho. Lá no terminal
+com o comando git clone enseir o caminho do projeto. A primeira vez que usar essa chave o terminal vairetornar uma mensagem de objeção, mas é só responder com yes. Pronto Clonado!
+
